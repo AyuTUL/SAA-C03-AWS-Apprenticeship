@@ -1,0 +1,67 @@
+1. Core Definitions:
+
+AWS:
+- Amazon Web Service
+- cloud platform that offers on demand servers and services for building highly scalable applications
+- uses: big data analysis, website hosting, online gaming
+
+It is categorized into:
+- Regions: contains multiple isolated infrastructure
+- Availability Zones: collection of data centers within region
+- Data Centers: physical facilities containing AWS computing, storage and hardware
+- Edge Locations: caching content close to users
+
+User:
+- people who want AWS access
+
+Group:
+- collection of users for simplifying access permission management
+
+IAM:
+- Identity and Access Management
+- global AWS service for controlling user access
+- IAM Roles: gives temporary access to service
+- IAM Permission: policies that specify what actions users/groups are allowed to perform
+
+2. Key AWS Services:
+
+I. Define:
+
+A. VPC:
+- automatically preconfigured in AWS account
+- privately isolate services in public cloud
+
+- can create upto 5 VPCs in single AWS region, each containing 5 IPv4 CIDR blocks
+- CIDR block range is /28 to /16
+- reserved IP addresses:
+	10.0.0.0 - network address
+	10.0.0.1 - default gateway
+	10.0.0.2 - amazon DNS
+	10.0.0.3 - future use
+	10.0.0.255 - broadcast address
+
+- route is rule that direct network traffic in VPC
+- defines destination CIDR block and target to send traffic to
+
+B. EC2:
+- Amazon Elastic Compute Cloud
+- provides Infrastructure as a Service IaaS
+- renting virtual machines, virtual storage, load balancing, scaling
+
+- auto scaling for dynamic traffic management
+
+- load balancing for application availability and fault tolerance by distributing incoming traffic across multiple targets
+
+C. S3:
+- Amazon Simple Storage Service
+- object storage service
+- stores data as objects inside buckets
+
+- S3 lifecycle rules automates transition and expiration of objects in S3 buckets
+- transition means moving objects between storage classes
+- expiration means deleting objects after specified time period
+
+D. RDS:
+- Relational Database Service
+- support relational databases like PostgreSQL, MySQL, MariaDB using SQL as query language
+- create and manage database in cloud using AWS for administrative tasks

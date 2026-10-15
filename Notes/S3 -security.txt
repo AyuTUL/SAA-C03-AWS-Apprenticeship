@@ -1,0 +1,66 @@
+S3 Security:
+1. SSE S3: 
+- fully managed by AWS
+- server side encryption AES 256 keys
+
+2. SSE KMS: 
+- managed by both AWS and customer
+- AWS Key Management Service for encryption keys
+
+a. AWS Managed CMKs: managed by AWS, convenience
+b. Customer Managed CMKs: managed by customer, control
+
+3. SSE C: 
+- fully managed by customer
+- customer provides encryption keys which are used by AWS
+- mandatory HTTPS
+
+4. client side encryption: 
+- data is encrypted before upload and decrypted after download
+- AWS doesn't see plaintext
+
+Encryption in Transit SSL/TLS for S3:
+- protects data while moving between client and S3
+
+Amazon S3 - Force Encryption in Transit
+- "aws:SecureTransport":"false"
+- denies access to request not using HTTPS
+
+Cross Origin Resource Sharing CORS:
+- controls how resources in S3 bucket can be accessed by web apps from different domain
+
+	1st floor to 2nd floor janu paryo
+	door of 1st floor and 2nd floor khulla hunu paryo
+
+Multi Factor Authentication Delete:
+- to permanently delete object version / suspend versioning
+- NOT to enable versioning / list deleted versions
+
+S3 Access Logs:
+- separate log bucket for S3 bucket
+- logging loop: same bucket for monitor and logging
+
+Pre-Signed URLS:
+- temporary access to objects in S3 buckets
+- expiration time
+
+Glacier Vault Lock:
+- Write Once Read Many WORM
+- Vault Lock Policy is locked to prevent future edits (immutable)
+
+Object Lock:
+- also WORM
+- for single object
+- retention: time period till lock is valid (expiration date)
+- legal hold: no expiration date, requires explicit deletion
+
+a. Compliance Mode: even AWS root users cant remove / overwrite protected data
+b. Governance Mode: lets privileged users
+
+Access Points:
+	separate bato for separate
+
+Object Lamda:
+- serverless computing
+
+	S3 ma kei vayo vane Lamda function trigger hunxa

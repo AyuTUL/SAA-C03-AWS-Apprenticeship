@@ -1,0 +1,68 @@
+IP:
+- device label
+
+CIDR:
+- range of IP
+- 192.168.0.1/24 -> 24 is length of network part
+
+Virtual Private Cloud VPC:
+- automatically preconfigured
+- privately isolate services in public cloud
+- use VPC CIDR
+
+10.0.0.0 - network address
+10.0.0.1 - default gateway
+10.0.0.2 - amazon DNS
+10.0.0.3 - future use
+10.0.0.255 - broadcast address
+
+Internet Gateway:
+- create gateway first then attach to VPC
+
+	internet aune dhoka
+
+Route Table:
+
+	direction dekhauxa like google maps
+
+Bastion Host:
+- for public to private
+
+Network Address Translation NAT Instance:
+- for private to public
+
+NAT Gateway
+- NAT instance but managed by AWS
+- fee based on usage duration and bandwidth consumption
+
+Security Group:
+- virtual firewall 
+- stateful, remembers
+- instance level
+
+Network Access Control List NACL"
+- stateless virtual firewall
+- subnet level
+
+Ephemeral Ports:
+- temporary, unique identifier
+
+VPC Peering:
+- private connection between 2 VPC
+
+AWS Private Link:
+- connect VPC and service privately
+
+VPC Endpoints:
+- connect VPC and service privately without using public internet\
+
+a. Gateway Endpoint: Amazon S3, DynamoDB, fee
+b. Interface Endpoint: Private Link, Elastic Network Interfaces ENIs, free
+
+VPC Flow Logs:
+- 
+
+AWS Site to Site VPN:
+-
+
+VPN CloudHub:

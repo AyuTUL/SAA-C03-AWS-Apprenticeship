@@ -1,0 +1,19 @@
+S3 storage classes:
+1. standard general purpose:
+- for daily, frequently accessed data
+- low latency
+- big data analysis, mobile apps
+- most expensive
+
+2. infrequent access : for less accesed data
+a. standard : 3 minimum replications of data, for backups
+b. one zone : only 1 replication of data, for secondary backup/ recreatable data
+
+3. glacier : for rarely accessed data
+a. instant retrieval : immediate retrieval
+b. flexible retrival : within short time frame
+c. deep archive : longer time frame, cheapest
+
+3. intelligent tiering:
+- monitor access pattern and auto allocates tier
+- monthly fee for monitoring
